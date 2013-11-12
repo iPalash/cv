@@ -1,0 +1,243 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Adobe Caslon Pro} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Adobe Hebrew} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Swapnil Palash}\\ % Your name
+
+\LARGE{\color{headings}\fontspec[Variant =2]{Harrington} Curriculum {Vit\fontspec[Variant = 3]{Harrington}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+\normalsize
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+
+
+\textsc{Present} 2012-16& Undergraduate Degree in \textsc{}\textsc{Computer Science} \\
+&\footnotesize(Bachelor of Technology)\normalsize \\
+&\textbf{Indian Institute of Technology}, Delhi\\
+&\normalsize \textsc{Gpa}: 7.4/10.0 \\
+&\\
+
+%------------------------------------------------
+
+\textsc{May} 2011 & Senior Secondary Level, \textbf{Lucknow Public School}\\
+&\textbf{AISSCE}, Percentage: \emph{94.8}\\
+
+&\\
+
+%------------------------------------------------
+
+\textsc{May} 2009 & Secondary Level, \textbf{Lucknow Public School}\\
+&\textbf{AISSE}, Percentage: \emph{96.6}\\
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Research Interests} 
+\begin{itemize} \itemsep1pt
+\item Machine Learning \& Data Mining
+\item Artificial Intelligence
+\item Number Theory in Cryptography
+\item Probability \& Game Theory
+\end{itemize}
+	
+%----------------------------------------------------------------------------------------
+%	AWARDS and ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\section{Certificates and Achievements}
+
+\begin{tabular}{rl}
+\textsc{May} 2012 & \textbf{All India Rank} 928 \\
+&Among half a Million Candidates \footnotesize(IIT-JEE 2012)\normalsize\\\\
+
+\textsc{Jan} 2012 & Secured a position in the Merit list\\
+&  \textbf{SCRA (Special Class Railway Apprentice) }\footnotesize(SCRA-2011)\normalsize\\\\
+
+\textsc{May} 2011 & Awarded a Merit Certificate\\
+& \textbf{Informatics Practices(100\%) }\footnotesize(AISSCE-2011)\normalsize\\\\
+
+\textsc{May} 2009 & Awarded a Merit Certificate \\
+& \textbf{Social Sciences(100\%) }\footnotesize(AISSE-2009)\normalsize\\\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%       EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{tabular}{r|p{11cm}}
+\emph{Current} &  \emph{Social Network Simulation}\\
+& \footnotesize{Simulating an acedemic social network spread across multiple} \\
+& \footnotesize{Universities and then using the data acquired to answer various}\\
+& \footnotesize{queries about the network.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+ &  \emph{Processor Simulation and Design}\\
+& \footnotesize{Simulating a processor in JAVA with basic arithmetic instruction}\\
+& \footnotesize{set and implementing a processor design in \href{http://ozark.hendrix.edu/~burch/logisim/}{Logism}}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+\textsc{July-Sept 2013} &  \emph{Cross-Platform 3D Racing Game}\\
+& \footnotesize{Developed an OpenGL-based racing game as a part of a }\\
+& \footnotesize{Core course in my undergrad studies.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+
+\end{tabular}
+
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 44, Pratap Nagar, Lucknow, UP, India, 226023 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +91 850 688 6672\\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:palash.swapnil@gmail.com}{palash.swapnil@gmail.com} \\ % Email address
+\Keyboard & \href{http://www.cse.iitd.ernet.in/~cs1120257}{http://www.cse.iitd.ernet.in/$\sim$cs1120257} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	Courses
+%----------------------------------------------------------------------------------------
+
+\section{Some Courses undertaken at IIT Delhi} 
+
+\begin{tabular}{rl}
+\textsc{Present} & \textbf{Discrete Mathematical Structures}\\
+& \textit{Prof. Ragesh Jaiswal}\\\\
+
+ \textsc{Present} & \textbf{Computer Architecture}\\
+& \textit{Prof. Smruti Ranjan Sarangi}\\\\
+\textsc{Present} & \textbf{Design Practices in} \textbf{Computer Science}\\
+&\footnotesize{>Made a 3D bike race game using OpenGL} \\ 
+&\footnotesize{>Working on simulation of a Social Network.} \\ \\
+ \textsc{Present} & \textbf{Digital Electronics Circuits}\\
+& \textit{Prof. G.S. Visweswaran}\\\\
+ \textsc{Jan-Apr '13} & \textbf{Data Structures}\\
+& \textit{Prof. Amit Kumar}\\\\
+\textsc{Jan-Apr13} & \textbf{Analysis and Matrix Algebra}\\
+& \textit{Prof. Ritumoni Sharma}
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Designing and Coding Skills} 
+
+\begin{tabular}{rl}
+Extensive
+& \textsc{java}, C++\\[2pt]
+Intermediate
+& \textsc{html5}, \textsc{JavaScript, C}\\ & \LaTeX, \textsc{python, MySQL}\\[2pt]
+Basic
+& \textsc{css3}, \textsc{SML}, VB
+\end{tabular}
+\\
+%----------------------------------------------------------------------------------------
+%	COMMUNITY INVOLVEMENT
+%----------------------------------------------------------------------------------------
+
+\section{Community Involvement}
+\begin{itemize} \itemsep1pt 
+\item Representative at \href{https://www.facebook.com/DanceClub.IITDelhi}{Dance Club, IIT Delhi}
+\item I am actively involved in the \textbf{NSS} (the upfront gov. organisation for social upliftment) Activites
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OTHER INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Other Interests} 
+\begin{itemize} \itemsep1pt
+\item I have keen interest in technology and related trivia. 
+\item I also write a blog: \href{http://techvisio.blogspot.in/}{Techvisio}.
+
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
